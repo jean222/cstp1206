@@ -11,28 +11,41 @@
         console.log("==QUESTION 1==");
         // 1. Write a function to find the sum of the elements inside the array
 
-        function sumNum() {
-            const numArr = [22, 45, 46, 87, 5, 71];
-            let sum = 0;
-            for ( number of numArr) {
-                sum += number;
-            }
-            console.log(sum);
-        }
-
-        sumNum();
-
         console.log("==QUESTION 2==");
         // 2. Using a function for loop print all even numbers up to n (parameter in function);
-
-        
 
         console.log("==QUESTION 3==");
         // 3. Write a function take a string as a parameter, Check if a string contains the letter “y”. If yes print "YES" and only one time.
              // For example - "Crayzy" "Yes"
+        
+        function isStr(strWord) {
+
+            if (strWord.indexOf('y') > -1) {
+                console.log("yes");
+            }
+            else {
+                console.log("no");
+            }
+        }
+        isStr("January")
+
 
         console.log("==QUESTION 4==");
         // 4. Write a function to find the factorial of a given number n
+        function factorialNum(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            }
+
+            for (var i = n - 1; i >= 1; i--) {
+                n *= i;
+            }
+
+            return n;
+
+            }
+        console.log(factorialNum(5));
+
 
         console.log("==QUESTION 5==");
         // 5. // Write a function which accepts 4 parameters (different scores of a student for subjects), and
@@ -41,6 +54,28 @@
             // If the average is between 70 and 90 , then console grade B
             // If the average is between 50-70, then console grade C
             // Other wise console grade F
+
+        function stdntScore (score1, score2, score3, score4) {
+            let totalGrade = score1 + score2 + score3 + score4;
+            let gradeAvg = totalGrade / 4;
+
+            if (gradeAvg >= 90) {
+                console.log("Grade A");
+            }
+
+            else if (gradeAvg >=70 && gradeAvg <= 89 ) {
+                console.log("Grade B");
+            }
+
+            else{
+                console.log("grade C");
+            }
+
+            console.log(gradeAvg);
+
+        }
+
+        stdntScore(57, 41, 87, 58)
 
 
         console.log("==QUESTION 6==");
@@ -53,6 +88,16 @@
         // *****
         // ******
         // *******
+
+        function starRows(n) {
+            for(var i = 1; i <= n; i++) {
+                console.log("* ".repeat(i));
+            }
+        }
+
+        starRows(7)
+
+
 
         console.log("==QUESTION 7==");
         // 7.
@@ -71,10 +116,37 @@
         // **
         // *
 
+        function starsPart2 (n) {
+            let strSpace = "";
+            for(var i = 1; i <= n; i++) {
+                console.log("* ".repeat(i));
+            }
+            for (let i = 0; i < n; i++) {
+                for (let s = 0; s < n - i; s++) {
+                    strSpace += "* ";
+                }
+                strSpace += "\n";
+            }
+            console.log(strSpace);
+        }
+
+        starsPart2(5)
+
+
+
 
         console.log("==QUESTION 8==");
         // 8. Write a function to reverse a string
 
+        function rvrsString(words) {
+            let newWord = "";
+            for (let i = words.length - 1; i >= 0; i--) {
+                newWord += words[i];
+            }
+            console.log(newWord)
+        }
+
+        rvrsString("happy");
 
     </script>
 </body>
