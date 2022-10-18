@@ -1,0 +1,114 @@
+body, html {
+    background-color: #EBECF0;
+}
+
+body, p, input, select, textarea, button {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+}
+
+div, p {
+    color: #BABECC;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+form {
+    padding: 16px;
+    width: 16px*20;
+    margin: 0 auto;
+}
+
+.hello {
+    padding: 16px*2 0;
+    text-align: center;
+}
+
+button, input {
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius:16px*20;
+    padding: 16px;
+    background-color: #EBECF0;
+    text-shadow: 1px 1px 0 #FFF;
+}
+
+label {
+    display: block;
+    margin-bottom: 16px*1.5;
+    width: 100%;
+}
+
+input {
+    margin-right: 16px/2;
+    box-shadow: inset 2px 2px 2px #BABECC, inset -1px -1px 2px #FFF;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    
+    /* &:focus {
+        box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+    } */
+}
+
+
+
+button {
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px #FFF, 5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.icon {
+    margin-right: 16px/2;
+}
+
+unit {
+    border-radius: 16px/2;
+    line-height: 0;
+    width: 16px*3;
+    height: 16px*3;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 16px/2;
+    font-size: 16px*1.2;
+
+}
+
+.black{
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pad {
+    padding: 25px;
+}
+
+.padd {
+    padding: 10px;
+}
+
+
+
+
+    
+
+
+
+
+
+
