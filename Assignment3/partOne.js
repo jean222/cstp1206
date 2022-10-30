@@ -39,9 +39,38 @@ studentWithHighestMarks(student);
 
 // ==========QUESTION 2==========
 
-// let arr1 = [1,2,3,5,6,7,8]; // 4
-// let arr2 = [ 4, 5, 2, 1, 0 ]; // 8
-// let array = [2, 1, 0, 3, 7, 6,4, 5, 10, 9]; // 8 
+// Hi, I just want to let you know that I tried
+
+let arr1 = [1,2,3,5,6,7,8]; // 4
+let arr2 = [ 4, 5, 2, 1, 0 ]; // 8
+let array = [2, 1, 0, 3, 7, 6,4, 5, 10, 9]; // 8 
+let n = arr1.length
+// let n = arr2.length
+// let n = array.length
+
+function missingNumber(arr, n) {
+    let i;
+    let numArr = [];
+
+    for (i = 0; i <= n; i++){
+        numArr[i] = 0;
+    }
+
+    for (i = 0; i < n; i++) {
+        numArr[arr[i] - 1] = 1;
+    }
+
+    let num = 0;
+    for (i = 0; i <= n; i++) {
+        if (numArr[i] == 0)
+        num = i + 1;
+    }
+
+    console.log(num);
+}
+
+missingNumber(array, n);
+
 
 // function missingNumber(array, n) { 
 //     let i;
